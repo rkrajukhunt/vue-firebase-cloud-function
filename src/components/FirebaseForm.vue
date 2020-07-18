@@ -21,7 +21,7 @@
     <form @input="fieldUpdate">
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
-                <div class="w-2/3 px-3">
+                <div class="w-2/3 px-3 mb-2">
                     <label class="block mb-3 text-left text-gray-600" for="">User name</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.username" />
                 </div>
@@ -29,12 +29,12 @@
         </div>
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
-                <div class="w-1/3 px-3">
+                <div class="w-1/3 px-3 mb-2">
                     <label class="block mb-3 text-left text-gray-600" for="">First name</label>
                     <!-- <input type="tel" class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" /> -->
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.firstname" />
                 </div>
-                <div class="w-1/3 px-3">
+                <div class="w-1/3 px-3 mb-2">
                     <label class="block mb-3 text-left text-gray-600" for="">Last name</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.lastname" />
                 </div>
@@ -42,11 +42,11 @@
         </div>
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
-                <div class="w-1/3 px-3">
+                <div class="w-1/3 px-3 mb-2">
                     <label class="block mb-3 text-left text-gray-600" for="">State</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.state" />
                 </div>
-                <div class="w-1/3 px-3">
+                <div class="w-1/3 px-3 mb-2">
                     <label class="block mb-3 text-left text-gray-600" for="">Country</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.country" />
                 </div>
