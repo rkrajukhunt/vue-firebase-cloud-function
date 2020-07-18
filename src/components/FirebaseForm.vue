@@ -1,6 +1,6 @@
 <template>
     <div class="col-span-1 lg:col-span-6">
-    <h4 class="text-3xl text-gray-700 mb-5">Vue firestore Demo</h4>
+    <h4 class="text-3xl text-gray-700 mb-2">Vue Firebase with Tailwind Example</h4>
     <br />
     <div class="notification" v-if="formComplete">Form completion - {{formComplete}}</div>
     <div class="notification is-success" v-if="state === 'synced'">Form is synced with Firestore</div>
@@ -21,25 +21,8 @@
     <form @input="fieldUpdate">
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
-                <div class="w-1/3 px-3">
-                    <label class="block mb-3 text-gray-600" for="">First name</label>
-                    <!-- <input type="tel" class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" /> -->
-                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.firstname" />
-                </div>
-            </div>
-        </div>
-        <div class="p-1 rounded-md shadow-md bg-white">
-            <div class="flex justify-center">
-                <div class="w-1/3 px-3">
-                    <label class="block mb-3 text-gray-600" for="">Last name</label>
-                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.lastname" />
-                </div>
-            </div>
-        </div>
-        <div class="p-1 rounded-md shadow-md bg-white">
-            <div class="flex justify-center">
-                <div class="w-1/3 px-3">
-                    <label class="block mb-3 text-gray-600" for="">User name</label>
+                <div class="w-2/3 px-3">
+                    <label class="block mb-3 text-left text-gray-600" for="">User name</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.username" />
                 </div>
             </div>
@@ -47,15 +30,24 @@
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
                 <div class="w-1/3 px-3">
-                    <label class="block mb-3 text-gray-600" for="">State</label>
-                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.state" />
+                    <label class="block mb-3 text-left text-gray-600" for="">First name</label>
+                    <!-- <input type="tel" class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" /> -->
+                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.firstname" />
+                </div>
+                <div class="w-1/3 px-3">
+                    <label class="block mb-3 text-left text-gray-600" for="">Last name</label>
+                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.lastname" />
                 </div>
             </div>
         </div>
         <div class="p-1 rounded-md shadow-md bg-white">
             <div class="flex justify-center">
                 <div class="w-1/3 px-3">
-                    <label class="block mb-3 text-gray-600" for="">country</label>
+                    <label class="block mb-3 text-left text-gray-600" for="">State</label>
+                    <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.state" />
+                </div>
+                <div class="w-1/3 px-3">
+                    <label class="block mb-3 text-left text-gray-600" for="">Country</label>
                     <input class="border border-gray-500 rounded-md inline-block py-2 px-3 w-full text-gray-600 tracking-widest" type="text" id="fname" name="fname" v-model="userdata.country" />
                 </div>
             </div>

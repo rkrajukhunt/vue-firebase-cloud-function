@@ -1,11 +1,16 @@
 {
-  "name": "vuefire-demo",
+  "name": "vue-firebase-cloud",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+  },
+  "author": {
+    "email": "rajukhunt15@gmail.com",
+    "name": "Raju Khunt",
+    "url": "https://github.com/rkrajukhunt/vue-firebase-cloud-function.git"
   },
   "dependencies": {
     "axios": "^0.19.2",
